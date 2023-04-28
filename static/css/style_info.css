@@ -1,0 +1,87 @@
+body {
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+}
+
+header {
+    background-color: #b94646;
+    padding: 10px;
+    display: flex;
+}
+
+.home {
+   float: left;
+   width: 50%;
+}
+
+.nav {
+   float: right;
+   width: 50%;
+   padding-top: 10px;
+   margin-left: 70%;
+}
+
+a {
+   padding-right : 10px;
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+}
+
+fa {
+   font-size: 25px;
+   color: white;
+}
+
+fa:hover {
+   color: orange;
+}
+
+a:hover {
+   cursor: pointer;
+   color: orange;
+}
+
+.intro {
+    font-size: 20px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+#logo {
+   background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+   background-size: 300%;
+   color: orange;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: animated_text 5s ease-in-out infinite;
+   -moz-animation: animated_text 5s ease-in-out infinite;
+   -webkit-animation: animated_text s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+   0% {
+       background-position: 0px 50%;
+   }
+
+   50% {
+       background-position: 100% 50%;
+   }
+
+   100% {
+       background-position: 0px 50%;
+   }
+}
+
+#hover {
+   font-style: oblique;
+}
+
+#hover:hover {
+   cursor: pointer;
+   color: #e89a3e;
+}

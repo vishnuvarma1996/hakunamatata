@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_profile.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div id="logo_div">
+            <a id="logo" href="#">Hakunamatata</a>
+        </div>
+
+        <ul class="nav">
+            <li><a style="font-size: 25px" class="navigation" href="homepage"><i class="fa fa-home"></i></a></li>
+            <li><a href="aboutus">👥</a></li>
+            <li><a href="chart">📈</a></li>
+            <li><a href="info"><i class="fa fa-info-circle"></i></a></li>
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <form action="{{ url_for('updateuser') }}" method="POST" class="form">
+            <h2 class="form-title">Update Your Profile</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="" readonly>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <button class="btn" type="submit" value="Update">Update</button>
+        </form>
+
+        <form action="{{ url_for('deleteuser') }}" method="POST" class="form">
+            <input type="hidden" id="username2" name="username" value="" readonly>
+
+            <button class="btn" type="submit">Delete Profile</button>
+        </form>
+
+
+        <script>
+            var username = localStorage.getItem("username");
+            var usernameField = document.getElementById("username");
+            usernameField.value = username;
+
+            var usernameField2 = document.getElementById("username2");
+            usernameField2.value = username;
+        </script>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li><a class="locations" href="#">🌐 India</a></li>
+            <li><a class="locations" href="#">🌐 America</a></li>
+            <li><a class="locations" href="#">🌐 France</a></li>
+            <li><a class="locations" href="#">🌐 Italy</a></li>
+            <li><a class="locations" href="#">🌐 China</a></li>
+            <li><a class="locations" href="#">🌐 Mexico</a></li>
+        </ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script_homepage.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_loginpage.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+</head>
+
+<body background="{{ url_for('static', filename='img/bg/food_bg3.jpg') }}">
+    <div class="container">
+        <h1>Sign up</h1>
+        <form action="{{ url_for('signupuser') }}" method="POST" id="login-form" onclick="storeusername()">
+            <span><i class="fas fa-user"></i></span>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder=" Enter username">
+            <span><i class="fas fa-lock"></i></span>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/name.js') }}"></script>
+</body>
+
+</html>

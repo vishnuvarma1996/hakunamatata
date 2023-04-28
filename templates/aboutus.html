@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_aboutus.css') }}">
+</head>
+
+<body>
+    <div class="header">
+        <a href="homepage"><i class="fa fa-home" style="font-size:36px;color: white;"></i></a>
+        <div class="nav">
+            <a href="menu">☰</a>
+            <a class="navigation" href="chart">📈</a>
+            <a href="info"><i class="fa fa-info-circle"></i></a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div id="image">
+                    <img class="image" src="{{ url_for('static', filename='img/v_3.jpg') }}" alt="vishnu">
+                </div>
+                <div class="container">
+                    <h2>Maruthi Sai Vishnu Varma Vanapala</h2>
+                    <p class="title">Flask Designer & QA Lead</p>
+                    <p>Proud to be the QA Lead for the team, designed and developed the Home page. Being a creative
+                        designer, I am
+                        thrilled to have contributed my expertise in this project. It was an exciting process, and I am
+                        proud to
+                        have been a part of it.</p>
+                    <p class="mail">mvanapala@usf.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div id="image">
+                    <img class="image" src="{{ url_for('static', filename='img/a_2.jpg') }}" alt="Akash">
+                </div>
+                <div class="container">
+                    <h2>Akash Thallada</h2><br>
+                    <p class="title">Product Page Designer</p>
+                    <p>I proposed the website concept, designed and developed the Product page. Being a creative
+                        designer, I am
+                        thrilled to have contributed my expertise in this project. It was an exciting process, and I am
+                        proud to
+                        have been a part of it.</p>
+                    <p class="mail">akashthallada@usf.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div id="image">
+                    <img class="image" src="{{ url_for('static', filename='img/m_2.jpg') }}" alt="Melinda">
+                </div>
+                <div class="container">
+                    <h2>Melinda Sunaina Vinod</h2><br>
+                    <p class="title">CSS Designer</p>
+                    <p>With my expertise in styling and layout, I was able to create a visually stunning and responsive
+                        design
+                        that enhances the user experience. It was a pleasure to work on this project, and I am excited
+                        to continue
+                        contributing my skills to future endeavors.</p>
+                    <p class="mail">melindasunaina@usf.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div id="image">
+                    <img class="image" src="{{ url_for('static', filename='img/k_2.jpg') }}" alt="Kalpana">
+                </div>
+                <div class="container">
+                    <h2>Vijaya Lakshmi Kalpana Potti</h2>
+                    <p class="title">About us Page Designer</p>
+                    <p>I proposed the main theme concept, designed and developed the About us page. Being a creative
+                        designer, I
+                        am thrilled to have contributed my expertise in this project. It was an exciting process, and I
+                        am proud to
+                        have been a part of it.</p>
+                    <p class="mail">vijayalakshmikalpana@usf.edu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li><a class="locations" href="#">🌐 India</a></li>
+            <li><a class="locations" href="#">🌐 America</a></li>
+            <li><a class="locations" href="#">🌐 France</a></li>
+            <li><a class="locations" href="#">🌐 Italy</a></li>
+            <li><a class="locations" href="#">🌐 China</a></li>
+            <li><a class="locations" href="#">🌐 Mexico</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

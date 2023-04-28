@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_chart.css') }}">
+</head>
+
+<body>
+
+  <div class="header">
+    <button onclick="history.back()"><span style="font-size: 36px;">«</span></button>
+  </div>
+  <div id="chart-container">
+    <h1>Pie chart</h1>
+    <canvas id="pie-chart"></canvas>
+  </div>
+
+  <script>
+    window.onload = function () {
+      new Chart(document.getElementById("pie-chart"), {
+        type: 'pie',
+        data: {
+          labels: ["Asian", "Chinese", "Italian", "Mexican", "American"],
+          datasets: [{
+            label: "Cuisine",
+            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+            data: [2, 1, 2, 1, 2]
+          }]
+        },
+        options: {
+          responsive: true, // Make the chart responsive
+          maintainAspectRatio: false, // Disable maintaining aspect ratio
+          title: {
+            display: true,
+            text: 'Proportion of Culinary Categories Offered on Our Website - A Statistical Analysis'
+          }
+        }
+      });
+    };
+  </script>
+</body>
+
+</html>

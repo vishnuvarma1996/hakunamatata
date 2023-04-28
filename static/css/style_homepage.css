@@ -1,0 +1,187 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #b94646;
+            box-shadow: 0 4px 2px -2px rgba(0,0,0,.5);
+            color: #ffffff;
+            padding: 16px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .header li {
+            margin-left: 16px;
+        }
+
+        .hero {
+            background-image: url('background.jpg');
+            background-size: cover;
+            height: 500px;
+            padding-top: 60px;
+        }
+
+        .hero h2 {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 200px;
+            font-size: 36px;
+        }
+        
+
+        .container {
+            margin: 32px auto;
+            max-width: 1200px;
+            padding: 0 16px;
+        }
+
+        /*Footer Styling*/
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 16px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer li {
+            margin-right: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 8px;
+            }
+
+            .header ul {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            .header li {
+                margin-left: 0;
+                margin-top: 8px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+                margin-top: 150px;
+            }
+        }
+
+
+        .locations {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .locations:hover {
+            cursor: pointer;
+            color: #e89a3e;
+            transition: 1s ease;
+        }
+
+        /*End of Footer Styling*/
+
+
+
+
+        .nav {
+            color: black;
+            font-size: 20px;
+            overflow: hidden;
+            padding: 2px 0px 2px 0px;
+        }
+
+        .nav a {
+            float: right;
+            color: black;
+            text-align: center;
+            padding: 2px 5px 2px 0px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .nav a:hover {
+            color: #e89a3e;
+            transition: 1s ease;
+        }
+
+        #logo_div {
+            width: 50%;
+            height: 50px;
+            float: left;
+        }
+
+        #nav_div {
+            width: 50%;
+            height: 50px;
+            float: right;
+        }
+
+        #logo {
+            background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+            background-size: 300%;
+            float: left;
+            font-size: 25px;
+            color: orange;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animated_text 5s ease-in-out infinite;
+            -moz-animation: animated_text 5s ease-in-out infinite;
+            -webkit-animation: animated_text s ease-in-out infinite;
+        }
+
+        @keyframes animated_text {
+            0% {
+                background-position: 0px 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0px 50%;
+            }
+        }
+
+#username {
+    color: #e89a3e;
+}

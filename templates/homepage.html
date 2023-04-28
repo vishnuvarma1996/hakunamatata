@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_homepage.css') }}">
+</head>
+
+<body background="{{ url_for('static', filename='img/bg/food_bg3.jpg') }}">
+    <div class="header">
+        <div id="logo_div">
+            <a id="logo" href="#">Hakunamatata</a>
+        </div>
+        <ul class="nav">
+            <li><a href="menu">☰</a></li>
+            <li><a href="aboutus">👥</a></li>
+            <li><a href="chart">📈</a></li>
+            <li><a href="info"><i class="fa fa-info-circle"></i></a></li>
+            <li><a href="profile"><i class="fa fa-edit"></i></a></li>
+
+        </ul>
+    </div>
+
+    <div>
+        <div class="hero">
+            <h2 style="color: black;">Hello <span id="username"></span>!, Glad to have you back.</h2>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <ul>
+            <li><a class="locations" href="#">🌐 India</a></li>
+            <li><a class="locations" href="#">🌐 America</a></li>
+            <li><a class="locations" href="#">🌐 France</a></li>
+            <li><a class="locations" href="#">🌐 Italy</a></li>
+            <li><a class="locations" href="#">🌐 China</a></li>
+            <li><a class="locations" href="#">🌐 Mexico</a></li>
+        </ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script_homepage.js') }}"></script>
+</body>
+
+</html>

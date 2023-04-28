@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_menu.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1><a class="navigation" href="homepage"><i class="fa fa-home" style="font-size:30px;"></i></a> <a
+                class="navigation" href="aboutus">👥</a> <a class="navigation" href="chart">📈</a> <a class="navigation"
+                href="info"><i style="color: black;" class="fa fa-info-circle"></i></a></h1>
+        <div class="search-container">
+            <form>
+                <input type="text" class="search-bar-input" placeholder="Search cuisine...">
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="image" src="{{ url_for('static', filename='img/food/b_f_p_twist.png') }}" alt="Food Image 1">
+            <p class="name">Italian Pasta</p>
+            <p class="content">
+                Pasta <br> White Sause <br> Coconut crumbles<br>
+                <span>(ITALIAN)</span>
+            </p>
+        </div>
+
+        <div class="column">
+            <img src="{{ url_for('static', filename='img/food/c_a_g.jpg') }}" alt="Food Image 2">
+            <p class="name">Choco Moca</p>
+            <p class="content">
+                Banana <br> Blue Berries <br> Custard<br>
+                <span>(ASIAN)</span>
+            </p>
+        </div>
+
+        <div class="column">
+            <img src="{{ url_for('static', filename='img/food/c_g_v&t.png') }}" alt="Food Image 1">
+            <p class="name">Green Passion</p>
+            <p class="content">
+                Brocolli <br> Edamame Beans <br> Cilantro<br>
+                <span>(AMERICAN)</span>
+            </p>
+        </div>
+
+        <div class="column">
+            <img src="{{ url_for('static', filename='img/food/g_s&o.png') }}" alt="Food Image 2">
+            <p class="name">Sunflower Shrimp</p>
+            <p class="content">
+                Shrimp <br> Sunflower seeds <br> Brown Rice<br>
+                <span>(AMERICAN)</span>
+            </p>
+        </div>
+
+        <div class="column">
+            <img src="{{ url_for('static', filename='img/food/p_m_f.png') }}" alt="Food Image 1">
+            <p class="name">Mexican Taco</p>
+            <p class="content">
+                Burrito <br> Red Bell Peppers <br> Soy beans<br>
+                <span>(MEXICAN)</span>
+            </p>
+        </div>
+
+        <div class="column">
+            <img src="{{ url_for('static', filename='img/food/r_c.png') }}" alt="Food Image 2">
+            <p class="name">Pineapple Chicken Feast</p>
+            <p class="content">
+                Chicken wing <br> Pineapple <br> Spinach <br>
+                <span>(CHINEESE)</span>
+            </p>
+        </div>
+
+        <div class="column">
+            <img src="{{ url_for('static', filename='img/food/s&s_pasta.jpg') }}" alt="Food Image 1">
+            <p class="name">Pasta Flakes</p>
+            <p class="content">
+                White Pasta <br> Basil <br> Coconut Flakes<br>
+                <span>(ITALIAN)</span>
+            </p>
+        </div>
+        
+        <div class="column">
+            <img src="{{ url_for('static', filename='img/food/t_q_s.png') }}" alt="Food Image 2">
+            <p class="name">Qinua bowl</p>
+            <p class="content">
+                Qinua rice <br> Spinach <br> Sweet potatoe<br>
+                <span>(ASIAN)</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script_menu.js') }}"></script>
+</body>
+
+</html>
